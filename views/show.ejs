@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Income & Expenditure</title>
+        <link rel="stylesheet" href="/normalize.css" />
+        <style type="text/css">
+            html {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1><%=budget.name%></h1>
+            <button onclick="document.location='/'">BACK</button>
+            <br /><br />
+
+            Date: <% for (let i = 0; i < budget.date.length; i++) { %>
+            <%=budget.date[i] %> <% } %>
+            <br /><br />
+
+            From: <% for (let i = 0; i < budget.from.length; i++) { %> <%=
+            budget.from[i] %> <% } %>
+            <br /><br />
+
+            Amount: <% for (let i = 0; i < budget.amount.length; i++) { %> <%=
+            budget.amount[i] %> <% } %>
+            <br /><br />
+
+            Tags: <% for (let i = 0; i < budget.tags.length; i++) { %> <%=
+            budget.tags[i] %> <% } %>
+            <br /><br />
+        </div>
+    </body>
+</html>
